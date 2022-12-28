@@ -5,7 +5,7 @@ def preprocess(corpus)
 features = ['default' ,'housing', 'loan','month','day_of_week', 'y','contact','education','poutcome','marital','job']
 feature_label_dict = {
                 'default':{'unknown':0,'no':1,'yes':2},
-                'housing':{'unknown':0,'no':1,'yes':2},
+                'housing':{'unknown':0,'no':1,'yes':2z},
                 'loan':{'unknown':0,'no':1,'yes':2},
                 'month':{'jan':1,'feb':2,'mar':3,'apr':4,'may':5,'jun':6,'jul':7,'aug':8,'sep':9,'oct':10,'nov':11,'dec':12},
                 'day_of_week':{'mon':1,'tue':2,'wed':3,'thu':4,'fri':5,'sat':6,'sun':7},
