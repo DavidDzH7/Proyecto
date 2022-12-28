@@ -2,17 +2,17 @@
 
 ## Business background
 
-* Who is the client, what business domain the client is in.
-* What business problems are we trying to address?
+* El cliente es La empresa X, de la ciudad de Bogota
+Buscan predecir que clientes se van a suscribir para generar camapañas especializadas para sus nichos mas relevantes
 
 ## Scope
-* What data science solutions are we trying to build?
-* What will we do?
-* How is it going to be consumed by the customer?
+* Se planea usar un modelo de clasifcacion binaria
+* Crear una herramienta de marketing 
+* La idea es que el cliente pueda visualizar informacion de las predicciones y tambien utilizar diferentes bases de datos
 
 ## Personnel
 * Who are on this project:
-	* Microsoft:
+	* David Dizes:
 		* Project lead
 		* PM
 		* Data scientist(s)
@@ -22,10 +22,14 @@
 		* Business contact
 	
 ## Metrics
-* What are the qualitative objectives? (e.g. reduce user churn)
+* What are the qualitative objectives?
+	 -Mejorar el alcance de las campañas publicitarias
 * What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
+	-Aumentar el numero de suscriptores
 * Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
+	-Aumentar la tasa de clientes suscritos en un %25 
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
+* 	-La empresa se encuentra migrando su informacion a bases de datos por lo que 		 actualmente no sacan provecho de la informacion 
 * How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
 
 ## Plan
@@ -33,7 +37,8 @@
 
 ## Architecture
 * Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)
+  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.
+	-Se esperan bases de datos en formato csv con las mismas columnas que la base de 	 datos con la que fue entrenado el modelo
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
   * all the data, 
   * after some pre-aggregation on-prem,
