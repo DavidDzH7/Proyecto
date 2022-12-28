@@ -12,10 +12,20 @@ _**For ease of modifying this report, placeholder links are included in this pag
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Dataset 1 | Brief description of its orignal location | Brief description of its destination location | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](link/to/report1)|
+| Marketing Data Set | The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit (variable y).  | el data set se importa para luego preprocesarlo c | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](link/to/report1)|
 | Dataset 2 | Brief description of its orignal location | Brief description of its destination location | [script2.R](link/to/R/script/file/in/Code) | [Dataset 2 Report](link/to/report2)|
 
-* Dataset1 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset1 Report.>
+* Dataset1 summary. 
+  Data Set Characteristics:  Multivariate
+  Number of Instances: 45211
+  Area: Business
+  Attribute Characteristics: Real
+  Number of Attributes: 17
+  Date Donated 2012-02-14
+  Associated Tasks: Classification
+  Missing Values? N/A
+  Number of Web Hits: 1920961 
+  More detailed information should be in the Dataset1 Report.
 * Dataset2 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset2 Report.> 
 
 ## Processed Data
