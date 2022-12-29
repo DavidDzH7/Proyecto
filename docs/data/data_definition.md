@@ -12,8 +12,7 @@ _**For ease of modifying this report, placeholder links are included in this pag
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Marketing Data Set | The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit (variable y).  | el data set se importa para luego preprocesarlo c | [loadData.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](link/to/report1)|
-| Dataset 2 | Brief description of its orignal location | Brief description of its destination location | [script2.R](link/to/R/script/file/in/Code) | [Dataset 2 Report](link/to/report2)|
+| Marketing Data Set | The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit (variable y).  | el data set se importa para luego preprocesarlo c | [loadData.py](link/to/python/script/file/in/Code) | [analisis.ipynb](link/to/report1)|
 
 * Dataset1 summary. 
   Data Set Characteristics:  Multivariate
@@ -32,12 +31,9 @@ _**For ease of modifying this report, placeholder links are included in this pag
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
 | Processed Dataset 1 | [Dataset1](link/to/dataset1/report), [Dataset2](link/to/dataset2/report) | [preprocesData.py](link/to/python/script/file/in/Code) | [Processed Dataset 1 Report](link/to/report1)|
-| Processed Dataset 2 | [Dataset2](link/to/dataset2/report) |[script2.R](link/to/R/script/file/in/Code) | [Processed Dataset 2 Report](link/to/report2)|
-* Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
-* Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
 
 ## Feature Sets
-
+Las caracteristicas quedan en la misma base de datos despues de prerocesado
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
 | Feature Set 1 | [Dataset1](link/to/dataset1/report), [Processed Dataset2](link/to/dataset2/report) | [R_Script2.R](link/to/R/script/file/in/Code) | [Feature Set1 Report](link/to/report1)|
