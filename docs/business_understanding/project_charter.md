@@ -41,7 +41,10 @@ Buscan predecir que clientes se van a suscribir para generar camapañas especial
 2.Carga de Datos:
 	se carga los datos en formatos utiles para poder 		preprocesar y limpiar la informacion con facilidad
 3.Preprocesado:
-	se trabajan los datos para hacer normalizacion, data 	augmentation y extraccion de caracteristicas de manera 	personalizada 
+	se trabajan los datos para hacer normalizacion, data 	augmentation y extraccion de caracteristicas de manera 	personalizada
+4.Modelo
+	se crea el importa el modelo y se modifican las capas ocultas para tener un modelo mas personalizado y se entrena
+5.Test 
 
 
 ## Architecture
@@ -55,9 +58,10 @@ Buscan predecir que clientes se van a suscribir para generar camapañas especial
   * Sampled data enough for modeling 
 
 * What tools and data storage/analytics resources will be used in the solution e.g.,
-  * ASA for stream aggregation
-  * HDI/Hive/R/Python for feature construction, aggregation and sampling
-  * AzureML for modeling and web service operationalization
+  * Python for feature construction, aggregation and sampling
+	*tensorFlow para importar y modifcar el modelo
+	*matplotlib para crear graficas con las bases de datos y entender su estructura
+	*sklearn para sacar metricas y manejo de datos de entrenamiento y de test
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
   * How will the customer use the model results to make decisions
   * Data movement pipeline in production
