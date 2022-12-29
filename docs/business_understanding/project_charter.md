@@ -29,17 +29,27 @@ Buscan predecir que clientes se van a suscribir para generar camapañas especial
 * Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
 	-Aumentar la tasa de clientes suscritos en un %25 
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
-* 	-La empresa se encuentra migrando su informacion a bases de datos por lo que 		 actualmente no sacan provecho de la informacion 
+* 	-La empresa se encuentra migrando su informacion a bases de datos por lo que actualmente no sacan provecho de la informacion 
 * How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
+- la metrica a utlizar es el accuracy con la particion de la base de datos para train, el zip trae ya representaciones del base de datos utiles para entrenar aparte del total de los datos 
 
 ## Plan
 * Phases (milestones), timeline, short description of what we'll do in each phase.
 
+1.Entendimiento del problema/negocio :
+	se revisa la informacion en la base de datos para 		entender su estructura y el posible uso de los datos
+2.Carga de Datos:
+	se carga los datos en formatos utiles para poder 		preprocesar y limpiar la informacion con facilidad
+3.Preprocesado:
+	se trabajan los datos para hacer normalizacion, data 	augmentation y extraccion de caracteristicas de manera 	personalizada 
+
+
 ## Architecture
 * Data
   * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.
-	-Se esperan bases de datos en formato csv con las mismas columnas que la base de 	 datos con la que fue entrenado el modelo
+	-Se esperan bases de datos en formato csv con las mismas columnas que la base de  datos con la que fue entrenado el modelo
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
+	- se descarga directamente el zip con todas las bases de datos a partir del link y la biblioteca system para correr comandos de consola y usar wget
   * all the data, 
   * after some pre-aggregation on-prem,
   * Sampled data enough for modeling 
